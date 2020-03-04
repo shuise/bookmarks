@@ -607,7 +607,7 @@ div{
 <div id="app">
     <input type="text" v-model="keyword" placeholder="搜索">
     <div id="list">
-        <a v-for="item in books" :href="item.link">{{ item.title }}</a> <br>
+        <p v-for="item in books"><a :href="item.link">{{ item.title }}</a></p>
     </div>
 </div>
 <script src="vue-2.6.10.js"></script>
